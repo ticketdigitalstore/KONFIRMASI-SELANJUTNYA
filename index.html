@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BAYRUN FOR CHARITY 2026</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#001f4d,#003b8e,#ff7b00);
+    min-height:100vh;
+    overflow-x:hidden;
+    color:white;
+}
+
+.container{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.card{
+    width:100%;
+    max-width:950px;
+    background:rgba(255,255,255,0.08);
+    border:2px solid rgba(255,255,255,0.15);
+    backdrop-filter:blur(12px);
+    border-radius:30px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 0 35px rgba(0,0,0,0.4);
+    position:relative;
+}
+
+.logo{
+    font-size:70px;
+    font-weight:bold;
+    margin-bottom:10px;
+    letter-spacing:2px;
+}
+
+.logo .orange{
+    color:#ff9900;
+}
+
+.sub{
+    font-size:22px;
+    color:#ddd;
+    margin-bottom:30px;
+}
+
+.status-box{
+    background:linear-gradient(135deg,#0047ff,#001b63);
+    border-radius:30px;
+    padding:35px;
+    box-shadow:0 0 25px rgba(0,140,255,0.5);
+}
+
+.status-box h1{
+    font-size:48px;
+    line-height:1.3;
+    text-transform:uppercase;
+    margin-bottom:25px;
+}
+
+.orange{
+    color:#ffae00;
+}
+
+.email-box{
+    background:white;
+    color:#003b8e;
+    padding:20px;
+    border-radius:20px;
+    margin-top:20px;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.wait{
+    margin-top:25px;
+    font-size:28px;
+    font-weight:bold;
+    color:#ffd700;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+    margin-top:35px;
+}
+
+.feature{
+    background:rgba(255,255,255,0.08);
+    border-radius:20px;
+    padding:20px;
+}
+
+.feature h3{
+    color:#ffb347;
+    margin-bottom:10px;
+}
+
+.feature p{
+    color:#eee;
+    font-size:15px;
+}
+
+.bottom{
+    margin-top:35px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.popup{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.85);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.popup-box{
+    width:90%;
+    max-width:420px;
+    background:white;
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    color:#222;
+}
+
+.popup-box h2{
+    color:#003b8e;
+    margin-bottom:15px;
+}
+
+.popup-box p{
+    margin-bottom:20px;
+    color:#555;
+}
+
+.popup-box input{
+    width:100%;
+    padding:15px;
+    border-radius:12px;
+    border:1px solid #ccc;
+    margin-bottom:15px;
+    font-size:16px;
+}
+
+.popup-box button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(135deg,#ff7b00,#ffb347);
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.popup-box button:hover{
+    opacity:0.9;
+}
+
+.success{
+    margin-top:15px;
+    color:green;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+.logo{
+    font-size:45px;
+}
+
+.status-box h1{
+    font-size:28px;
+}
+
+.email-box{
+    font-size:18px;
+}
+
+.wait{
+    font-size:20px;
+}
+
+.bottom{
+    font-size:18px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- POPUP EMAIL -->
+
+<div class="popup" id="popup">
+
+    <div class="popup-box">
+
+        <h2>AKSES LANDING PAGE</h2>
+
+        <p>
+            Silahkan masukan alamat e-mail Anda untuk melanjutkan akses halaman BAYRUN FOR CHARITY 2026
+        </p>
+
+        <input type="email" id="email" placeholder="Masukan E-mail Anda">
+
+        <button onclick="sendEmail()">
+            MASUK SEKARANG
+        </button>
+
+        <div class="success" id="success"></div>
+
+    </div>
+
+</div>
+
+<!-- LANDING PAGE -->
+
+<div class="container">
+
+    <div class="card">
+
+        <div class="logo">
+            <span class="orange">BAY</span>RUN
+        </div>
+
+        <div class="sub">
+            FOR CHARITY 2026
+        </div>
+
+        <div class="status-box">
+
+            <h1>
+                REGISTRASI PENDAFTARAN <br>
+                ANDA SEDANG <span class="orange">DALAM PROSES</span>
+            </h1>
+
+            <div class="email-box">
+                KAMI AKAN KONFIRMASI MELALUI E-MAIL <br>
+                <span class="orange">@BAYRUNFORCHARITY2026</span>
+            </div>
+
+            <div class="wait">
+                KONFIRMASI PALING LAMA 1 X 24 JAM
+            </div>
+
+        </div>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>DATA AMAN</h3>
+                <p>
+                    Informasi peserta dijaga kerahasiaannya dengan aman.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>KONFIRMASI CEPAT</h3>
+                <p>
+                    Tim kami segera memproses & mengirim konfirmasi.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>LAYANAN BANTUAN</h3>
+                <p>
+                    Support siap membantu Anda kapan saja.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>SAMPAI JUMPA</h3>
+                <p>
+                    Sampai jumpa di garis start BAYRUN 2026.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="bottom">
+            TERIMA KASIH SUDAH MENDAFTAR & MENJADI BAGIAN DARI KEBAIKAN ❤️
+        </div>
+
+    </div>
+
+</div>
+
+<!-- EMAILJS -->
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+
+emailjs.init("8NSAzoqbNHEoncP0B");
+
+async function sendEmail(){
+
+    const email = document.getElementById("email").value;
+
+    if(email === ""){
+
+        alert("Silahkan masukan e-mail terlebih dahulu");
+        return;
+
+    }
+
+    const templateParams = {
+
+        visitor_email: email,
+        access_time: new Date().toLocaleString(),
+        user_agent: navigator.userAgent
+
+    };
+
+    try{
+
+        await emailjs.send(
+            "service_4fmtudi",
+            "template_e31upb1",
+            templateParams
+        );
+
+        document.getElementById("success").innerHTML =
+        "AKSES BERHASIL, SILAHKAN TUNGGU...";
+
+        setTimeout(() => {
+
+            document.getElementById("popup").style.display = "none";
+
+        },1500);
+
+    }catch(error){
+
+        alert("Gagal mengirim notifikasi email");
+
+        console.log(error);
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
