@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+l<!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
@@ -20,18 +20,16 @@ body{
     min-height:100vh;
     overflow-x:hidden;
     background:
-    linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.55)),
+    linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.65)),
     url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1974&auto=format&fit=crop');
     background-size:cover;
     background-position:center;
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:25px;
+    padding:20px;
     position:relative;
 }
-
-/* LIGHT EFFECT */
 
 body::before{
     content:'';
@@ -64,7 +62,7 @@ body::after{
 .popup{
     position:fixed;
     inset:0;
-    background:rgba(0,0,0,0.85);
+    background:rgba(0,0,0,0.88);
     backdrop-filter:blur(8px);
     display:flex;
     justify-content:center;
@@ -87,7 +85,7 @@ body::after{
 }
 
 .popup-logo{
-    width:180px;
+    width:170px;
     margin:auto;
     margin-bottom:20px;
 }
@@ -98,12 +96,12 @@ body::after{
 
 .popup-box h2{
     font-size:28px;
-    margin-bottom:12px;
+    margin-bottom:10px;
 }
 
 .popup-box p{
-    color:#d9d9d9;
-    line-height:1.7;
+    color:#ddd;
+    line-height:1.8;
     font-size:15px;
     margin-bottom:25px;
 }
@@ -122,7 +120,7 @@ body::after{
 }
 
 .popup-box input::placeholder{
-    color:#d6d6d6;
+    color:#ccc;
 }
 
 .popup-box button{
@@ -139,17 +137,17 @@ body::after{
 }
 
 .popup-box button:hover{
-    transform:translateY(-2px);
-    box-shadow:0 10px 30px rgba(255,123,0,0.4);
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(255,123,0,0.4);
 }
 
 .success{
-    margin-top:18px;
+    margin-top:15px;
     color:#00ff9d;
     font-weight:600;
 }
 
-/* MAIN CARD */
+/* MAIN */
 
 .card{
     width:100%;
@@ -161,10 +159,8 @@ body::after{
     overflow:hidden;
     position:relative;
     z-index:1;
-    box-shadow:0 0 60px rgba(0,0,0,0.45);
+    box-shadow:0 0 60px rgba(0,0,0,0.4);
 }
-
-/* TOP */
 
 .top{
     padding:50px 50px 30px;
@@ -172,9 +168,9 @@ body::after{
 }
 
 .logo{
-    width:350px;
+    width:320px;
     margin:auto;
-    margin-bottom:20px;
+    margin-bottom:25px;
 }
 
 .logo img{
@@ -182,25 +178,13 @@ body::after{
 }
 
 .status-box{
-    background:
-    linear-gradient(135deg,#003cff,#001b63);
+    background:linear-gradient(135deg,#003cff,#001b63);
     border-radius:30px;
     padding:45px;
     position:relative;
     overflow:hidden;
-    border:2px solid rgba(255,255,255,0.12);
+    border:2px solid rgba(255,255,255,0.1);
     box-shadow:0 0 35px rgba(0,76,255,0.35);
-}
-
-.status-box::before{
-    content:'';
-    position:absolute;
-    width:450px;
-    height:450px;
-    background:rgba(255,255,255,0.05);
-    border-radius:50%;
-    top:-220px;
-    right:-120px;
 }
 
 .check{
@@ -214,22 +198,19 @@ body::after{
     font-size:42px;
     margin:auto;
     margin-bottom:25px;
-    position:relative;
-    z-index:1;
     box-shadow:0 0 30px rgba(0,183,255,0.4);
 }
 
 .title{
-    font-size:56px;
+    font-size:54px;
     line-height:1.2;
     font-weight:800;
+    color:white;
     text-transform:uppercase;
-    position:relative;
-    z-index:1;
 }
 
 .orange{
-    color:#ffae00;
+    color:#ffb347;
 }
 
 .mail-card{
@@ -237,14 +218,12 @@ body::after{
     background:white;
     border-radius:28px;
     padding:28px;
-    position:relative;
-    z-index:1;
 }
 
 .mail-card h3{
     color:#082b63;
     font-size:32px;
-    margin-bottom:12px;
+    margin-bottom:10px;
 }
 
 .mail-card p{
@@ -254,7 +233,7 @@ body::after{
 }
 
 .email-tag{
-    margin-top:18px;
+    margin-top:20px;
     display:inline-block;
     padding:13px 28px;
     border-radius:999px;
@@ -269,8 +248,6 @@ body::after{
     font-size:28px;
     font-weight:700;
     color:#ffd54a;
-    position:relative;
-    z-index:1;
 }
 
 /* FEATURES */
@@ -291,8 +268,7 @@ body::after{
 }
 
 .feature:hover{
-    transform:translateY(-4px);
-    border-color:rgba(255,174,0,0.35);
+    transform:translateY(-5px);
 }
 
 .icon{
@@ -315,7 +291,7 @@ body::after{
 /* FOOTER */
 
 .footer{
-    padding:0 50px 55px;
+    padding:0 50px 50px;
 }
 
 .footer-box{
@@ -326,7 +302,7 @@ body::after{
     font-size:24px;
     font-weight:700;
     line-height:1.7;
-    box-shadow:0 0 30px rgba(0,76,255,0.25);
+    color:white;
 }
 
 .footer-box span{
@@ -338,11 +314,11 @@ body::after{
 @media(max-width:768px){
 
 .logo{
-    width:240px;
+    width:220px;
 }
 
 .top{
-    padding:35px 20px 20px;
+    padding:30px 20px 20px;
 }
 
 .status-box{
@@ -350,7 +326,7 @@ body::after{
 }
 
 .title{
-    font-size:32px;
+    font-size:30px;
 }
 
 .mail-card h3{
@@ -362,7 +338,7 @@ body::after{
 }
 
 .email-tag{
-    font-size:15px;
+    font-size:14px;
 }
 
 .wait{
@@ -390,9 +366,13 @@ body::after{
 
 <!-- POPUP -->
 
-<div class="popup-logo">
-    <img src="logo.png">
-</div>
+<div class="popup" id="popup">
+
+    <div class="popup-box">
+
+        <div class="popup-logo">
+            <img src="logo.png">
+        </div>
 
         <h2>AKSES LANDING PAGE</h2>
 
@@ -419,7 +399,7 @@ body::after{
     <div class="top">
 
         <div class="logo">
-            <img src="https://i.ibb.co/9H6P2s4/bayrun-logo.png">
+            <img src="logo.png">
         </div>
 
         <div class="status-box">
@@ -440,10 +420,7 @@ body::after{
                 </h3>
 
                 <p>
-                    Formulir pendaftaran peserta BAYRUN FOR CHARITY 2026
-                    sedang dalam tahap verifikasi dan validasi data.
-                    Tim kami akan segera mengirimkan konfirmasi resmi
-                    melalui e-mail yang telah terdaftar.
+                    Formulir pendaftaran peserta BAYRUN FOR CHARITY 2026 sedang dalam tahap verifikasi dan validasi data. Tim kami akan segera mengirimkan konfirmasi resmi melalui e-mail yang telah terdaftar.
                 </p>
 
                 <div class="email-tag">
@@ -463,51 +440,35 @@ body::after{
     <div class="features">
 
         <div class="feature">
-
             <div class="icon">🔒</div>
-
             <h4>DATA AMAN</h4>
-
             <p>
                 Informasi peserta dijaga dan dilindungi secara aman serta rahasia.
             </p>
-
         </div>
 
         <div class="feature">
-
             <div class="icon">⚡</div>
-
             <h4>KONFIRMASI CEPAT</h4>
-
             <p>
                 Tim BAYRUN segera memproses registrasi dan konfirmasi peserta.
             </p>
-
         </div>
 
         <div class="feature">
-
             <div class="icon">🎧</div>
-
             <h4>LAYANAN BANTUAN</h4>
-
             <p>
                 Support siap membantu peserta kapan saja selama proses berlangsung.
             </p>
-
         </div>
 
         <div class="feature">
-
             <div class="icon">🏃</div>
-
             <h4>SAMPAI JUMPA</h4>
-
             <p>
                 Sampai jumpa di garis start BAYRUN FOR CHARITY 2026.
             </p>
-
         </div>
 
     </div>
@@ -536,18 +497,14 @@ async function sendEmail(){
     const email = document.getElementById("email").value;
 
     if(email === ""){
-
         alert("Silahkan masukan e-mail terlebih dahulu");
         return;
-
     }
 
     const templateParams = {
-
         visitor_email: email,
         access_time: new Date().toLocaleString(),
         user_agent: navigator.userAgent
-
     };
 
     try{
@@ -562,15 +519,12 @@ async function sendEmail(){
         "AKSES BERHASIL • SILAHKAN TUNGGU...";
 
         setTimeout(() => {
-
             document.getElementById("popup").style.display = "none";
-
         },1500);
 
     }catch(error){
 
         alert("Gagal mengirim notifikasi email");
-
         console.log(error);
 
     }
